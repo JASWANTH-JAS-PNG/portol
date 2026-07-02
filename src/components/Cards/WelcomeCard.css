@@ -1,0 +1,16 @@
+.welcome-banner {
+  height: 100px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  background: linear-gradient(120deg, #4b3fa8 0%, #6c5ce0 45%, #1c1f2e 100%);
+  overflow: hidden;
+}
+
+.welcome-banner h2 {
+  color: #fff;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}

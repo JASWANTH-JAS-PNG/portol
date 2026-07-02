@@ -1,0 +1,78 @@
+.inbox-page {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 16px;
+  height: calc(100vh - var(--navbar-height) - 49px - 48px);
+}
+
+.inbox-task-list {
+  overflow-y: auto;
+}
+
+.inbox-task-list-header {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  padding: 14px 16px 4px;
+}
+
+.inbox-task-category {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 16px;
+  color: var(--color-primary);
+}
+
+.inbox-task-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-border);
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.inbox-task-item.active {
+  background: var(--color-bg);
+}
+
+.inbox-task-name {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.inbox-task-title {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.inbox-task-time {
+  margin-left: auto;
+  font-size: 11px;
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}
+
+.inbox-task-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.inbox-task-detail .card-body {
+  flex: 1;
+}
+
+.inbox-task-message-bar {
+  border-top: 1px solid var(--color-border);
+  padding: 12px 16px;
+}
+
+.inbox-task-message-bar input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 13px;
+}

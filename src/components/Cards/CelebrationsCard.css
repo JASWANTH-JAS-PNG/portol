@@ -1,0 +1,78 @@
+.celebrations-tabs {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.celebrations-tab {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: none;
+  font-size: 13px;
+  color: var(--color-text-muted);
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.celebrations-tab.active {
+  color: var(--color-danger);
+  border-bottom-color: var(--color-danger);
+  font-weight: 600;
+}
+
+.celebrations-toggle {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  color: var(--color-text-muted);
+  display: flex;
+}
+
+.celebrations-heading {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  margin: 0 0 12px;
+}
+
+.celebrations-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 16px;
+}
+
+.celebrations-person {
+  text-align: center;
+  font-size: 12px;
+  width: 68px;
+}
+
+.celebrations-name {
+  margin-top: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.celebrations-wish-btn {
+  background: transparent;
+  border: none;
+  color: var(--color-primary);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 0;
+}
+
+.celebrations-wish-btn:disabled {
+  color: var(--color-success);
+  cursor: default;
+}
+
+.celebrations-date {
+  color: var(--color-text-muted);
+  font-size: 11px;
+}

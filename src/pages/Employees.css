@@ -1,0 +1,43 @@
+.employees-filters {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.employees-filters select {
+  padding: 8px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  font-size: 13px;
+  color: var(--color-text-muted);
+  background: var(--color-card);
+}
+
+.org-tree {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.org-tree-members {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.org-tree-member {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 13px;
+}
+
+.org-tree-member:last-child {
+  border-bottom: none;
+}
+
+.org-tree-member-role {
+  color: var(--color-text-muted);
+}

@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Portol
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Portol is an employee HR portal — a dashboard-driven web app for attendance, leave, team visibility, payroll summaries, performance tracking, and internal engagement. It's built with React and styled after modern HRMS tools like Keka.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Home dashboard** — quick access cards for inbox tasks, holidays, leave status, remote team members, live clock-in, and a company feed with birthdays/anniversaries
+- **Attendance** — daily stats, shift timings, clock-in actions, and a 30-day attendance log
+- **My Team** — team calendar, who's off/late/remote today, and peer directory
+- **My Finances** — salary breakdown and payslip history
+- **Org** — searchable employee directory and an organization tree grouped by department
+- **Engage** — company announcements with active/draft filtering
+- **Helpdesk** — support ticket tracking with ticket creation
+- **Performance** — KRAs, 1:1 meetings, skills profile, and growth plans
+- **Profile** — personal info, editable bio fields, skills, education, and experience
+- Light/dark theme and configurable accent color, persisted across sessions
 
-### `npm start`
+## Tech stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Create React App](https://create-react-app.dev/) (react-scripts 5)
+- React 19 with [react-router-dom](https://reactrouter.com/) v6 for routing
+- [react-icons](https://react-icons.github.io/react-icons/) for iconography
+- Plain CSS with a shared design-token stylesheet (`src/index.css`)
+- React Context (`src/context/AppContext.jsx`) for theme/accent/auth state
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting started
 
-### `npm test`
+```bash
+npm install
+npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Runs the app in development mode at [http://localhost:3000](http://localhost:3000).
 
-### `npm run build`
+## Available scripts
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `npm start` — run the dev server with hot reload
+- `npm test` — run the test suite
+- `npm run build` — create a production build in `build/`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Project structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+src/
+├── components/       # Reusable UI: Navbar, Sidebar, Cards, Common primitives
+├── context/          # AppContext (theme, accent color, auth state)
+├── data/             # Mock data used throughout the app
+├── layouts/           # DashboardLayout (navbar + sidebar shell)
+├── pages/            # Route-level pages (Dashboard, Attendance, Profile, ...)
+├── App.jsx           # Route definitions
+└── main.jsx          # App entry point
+```
 
-### `npm run eject`
+## Notes
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+All data in the app (employees, tickets, announcements, payslips, etc.) is mock/placeholder data defined under `src/data/` — there is no backend. It's meant as a front-end reference implementation of an HR portal UI.

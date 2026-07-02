@@ -1,0 +1,106 @@
+.feed-post-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.feed-post-author {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.feed-post-author span {
+  font-weight: 400;
+  color: var(--color-text-muted);
+}
+
+.feed-post-time {
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+.feed-post-message {
+  font-size: 13px;
+  margin: 0 0 12px;
+}
+
+.feed-post-celebration {
+  background: linear-gradient(135deg, #fdf1e7, #fde3ea);
+  border-radius: 8px;
+  padding: 24px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.feed-post-celebration span {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: var(--color-holiday-end);
+  margin-bottom: 6px;
+}
+
+.feed-post-celebration strong {
+  font-size: 22px;
+  color: var(--color-text);
+}
+
+.feed-post-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-top: 1px solid var(--color-border);
+  padding-top: 10px;
+}
+
+.feed-post-actions button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: none;
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.feed-post-actions button.active {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.feed-post-stats {
+  margin-left: auto;
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.feed-post-comments {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.feed-post-comment {
+  background: var(--color-bg);
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: 13px;
+}
+
+.feed-post-comment-form {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.feed-post-comment-form input {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  font-size: 13px;
+  background: var(--color-card);
+  color: var(--color-text);
+}

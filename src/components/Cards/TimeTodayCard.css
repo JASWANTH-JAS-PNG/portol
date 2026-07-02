@@ -1,0 +1,90 @@
+.time-today-card {
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.time-today-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.time-today-view-all {
+  background: transparent;
+  border: none;
+  color: #fff;
+  text-decoration: underline;
+  font-size: 12px;
+  padding: 0;
+}
+
+.time-today-label {
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
+.time-today-value {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 4px 0 14px;
+}
+
+.time-today-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.time-today-actions .btn {
+  background: #fff;
+  color: var(--color-primary);
+}
+
+.time-today-other-wrap {
+  position: relative;
+}
+
+.time-today-other-btn {
+  background: rgba(255, 255, 255, 0.15) !important;
+  color: #fff !important;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.time-today-other-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  box-shadow: 0 12px 32px rgba(20, 20, 43, 0.18);
+  display: flex;
+  flex-direction: column;
+  min-width: 160px;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.time-today-other-menu button {
+  background: transparent;
+  border: none;
+  color: var(--color-text);
+  text-align: left;
+  padding: 10px 12px;
+  font-size: 13px;
+}
+
+.time-today-other-menu button:hover {
+  background: var(--color-bg);
+}
+
+.time-today-status {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-size: 13px;
+}
