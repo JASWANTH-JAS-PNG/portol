@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/portol/static/css/main.fa7c3ff0.css",
+    "main.js": "/portol/static/js/main.1def7f22.js",
+    "static/js/453.4fa9653e.chunk.js": "/portol/static/js/453.4fa9653e.chunk.js",
+    "index.html": "/portol/index.html",
+    "main.fa7c3ff0.css.map": "/portol/static/css/main.fa7c3ff0.css.map",
+    "main.1def7f22.js.map": "/portol/static/js/main.1def7f22.js.map",
+    "453.4fa9653e.chunk.js.map": "/portol/static/js/453.4fa9653e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fa7c3ff0.css",
+    "static/js/main.1def7f22.js"
+  ]
+}
